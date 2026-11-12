@@ -18,3 +18,6 @@ wcc -0 -mm -os -s -zq -w4 -bt=dos -zl -i=sdk -fo=obj/qr_QR.obj apps/net/QR.C && 
 Tests: `test/qr_kern.sh` (QR-Erzeuger mit gcc und OpenCV), `test/rdqr.sh` (QEMU mit NE2000).
 
 Lizenz: GPL v2 oder später (siehe COPYING).
+
+## Symbol
+`src/*.ICO` ist das Programmsymbol (S/W und CGA, aus `*_SYM.TXT` und `*_SYM_C.TXT` mit `tools/mkrdb.py ... --cga`), über `SYMBOL 1` in der .RC in die EXE eingebaut. Die farbige Fassung `src/farbe/*.TXT` steht im farbigen Symbolsatz FARBSYM.DAT von RetroDesk 2.
